@@ -13,4 +13,5 @@ void USegmentInPoints::SegmentInPoints(ULidarPointCloud* Target, FVector BoxCent
 
 	// Construct new point cloud with isolated points
 	NewPointCloud = ULidarPointCloud::CreateFromData(boxPoints, false);
+	NewPointCloud->OriginalCoordinates = Target->OriginalCoordinates;
 }
