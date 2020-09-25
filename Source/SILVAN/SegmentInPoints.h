@@ -10,7 +10,7 @@
  * 
  */
 UCLASS()
-class PCM_PIPELINE_V2_API USegmentInPoints : public UBlueprintFunctionLibrary
+class SILVAN_API USegmentInPoints : public UBlueprintFunctionLibrary
 {
 	GENERATED_BODY()
 	

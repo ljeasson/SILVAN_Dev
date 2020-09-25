@@ -2,9 +2,9 @@
 
 using UnrealBuildTool;
 
-public class PCM_PIpeline_v2 : ModuleRules
+public class SILVAN : ModuleRules
 {
-	public PCM_PIpeline_v2(ReadOnlyTargetRules Target) : base(Target)
+	public SILVAN(ReadOnlyTargetRules Target) : base(Target)
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 	

@@ -11,10 +11,10 @@
  * 
  */
 UCLASS()
-class PCM_PIPELINE_V2_API USegmentOutPoints : public UBlueprintFunctionLibrary
+class SILVAN_API USegmentOutPoints : public UBlueprintFunctionLibrary
 {
 	GENERATED_BODY()
-
+	
 		UFUNCTION(BlueprintCallable, Category = "Custom", meta = (Keywords = "Points"))
 		static void SegmentOutPoints(ULidarPointCloud* Target, FVector BoxCenter, FVector BoxSize, int32& NumPoints, TArray<FVector>& PointVectors, ULidarPointCloud*& NewPointCloud);
 };

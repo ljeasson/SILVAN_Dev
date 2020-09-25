@@ -6,16 +6,16 @@
 
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintFunctionLibrary.h"
-#include "GetFullPointCloudInfo.generated.h"
+#include "ExtractPointCloudInfo.generated.h"
 
 /**
  * 
  */
 UCLASS()
-class PCM_PIPELINE_V2_API UGetFullPointCloudInfo : public UBlueprintFunctionLibrary
+class SILVAN_API UExtractPointCloudInfo : public UBlueprintFunctionLibrary
 {
 	GENERATED_BODY()
 		UFUNCTION(BlueprintCallable, Category = "Custom", meta = (Keywords = "Point Cloud"))
 		static void ExtractPointCloudInfo(ULidarPointCloud* PointCloud, FVector& Origin);
-	
+
 };

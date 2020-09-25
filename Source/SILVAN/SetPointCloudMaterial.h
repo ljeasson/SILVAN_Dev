@@ -6,18 +6,19 @@
 
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintFunctionLibrary.h"
-#include "GetPointCloudMaterial.generated.h"
+#include "SetPointCloudMaterial.generated.h"
 
 /**
  * 
  */
 UCLASS()
-class PCM_PIPELINE_V2_API UGetPointCloudMaterial : public UBlueprintFunctionLibrary
+class SILVAN_API USetPointCloudMaterial : public UBlueprintFunctionLibrary
 {
 	GENERATED_BODY()
-	UFUNCTION(BlueprintCallable, Category = "Custom", meta = (Keywords = "Material"))
+	
+		UFUNCTION(BlueprintCallable, Category = "Custom", meta = (Keywords = "Material"))
 		static void SetPointCloudMaterial(ULidarPointCloudComponent* PointCloud, UMaterialInterface* Material);
 
-	UFUNCTION(BlueprintCallable, Category = "Custom", meta = (Keywords = "Material"))
+		UFUNCTION(BlueprintCallable, Category = "Custom", meta = (Keywords = "Material"))
 		static void GetPointCloudMaterial(ULidarPointCloudComponent* PointCloud, UMaterialInterface*& Material);
 };

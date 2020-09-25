@@ -10,11 +10,10 @@
  * 
  */
 UCLASS()
-class PCM_PIPELINE_V2_API UTextFileManager : public UBlueprintFunctionLibrary
+class SILVAN_API UTextFileManager : public UBlueprintFunctionLibrary
 {
 	GENERATED_BODY()
-
+	
 		UFUNCTION(BlueprintCallable, Category = "Custom", meta = (Keywords = "Save"))
 		static bool SaveArrayText(FString SaveDirectory, FString FileName, TArray<FString> SaveText, bool AllowOverwriting);
-	
 };

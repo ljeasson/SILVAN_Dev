@@ -11,10 +11,10 @@
  * 
  */
 UCLASS()
-class PCM_PIPELINE_V2_API UGetPointClassification : public UBlueprintFunctionLibrary
+class SILVAN_API UGetPointClassification : public UBlueprintFunctionLibrary
 {
 	GENERATED_BODY()
-	
+		
 		UFUNCTION(BlueprintCallable, Category = "Custom", meta = (Keywords = "Classification"))
 		static void GetPointClassification(FLidarPointCloudPoint point, uint8& classification);
 };

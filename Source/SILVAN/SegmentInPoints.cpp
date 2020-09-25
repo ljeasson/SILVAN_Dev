@@ -15,3 +15,4 @@ void USegmentInPoints::SegmentInPoints(ULidarPointCloud* Target, FVector BoxCent
 	NewPointCloud = ULidarPointCloud::CreateFromData(boxPoints, false);
 	//NewPointCloud->OriginalCoordinates = Target->OriginalCoordinates;
 }
+
