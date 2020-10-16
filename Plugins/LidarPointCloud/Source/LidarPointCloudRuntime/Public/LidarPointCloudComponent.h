@@ -22,6 +22,8 @@ enum class ELidarPointCloudColorationMode : uint8
 	Position,
 	/** Uses Classification ID of the point along with the component's Classification Colors property to sample the color */
 	Classification,
+	Intensity,
+	Reflectance,
 };
 
 UENUM(BlueprintType)
