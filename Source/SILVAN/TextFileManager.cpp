@@ -5,6 +5,23 @@
 #include "Misc/FileHelper.h"
 #include "HAL/PlatformFilemanager.h"
 
+bool UTextFileManager::LoadTextFromFile(FString FileName, TArray<FString>& TextArray, FString& TextString)
+{
+	
+	if (!FPlatformFileManager::Get().GetPlatformFile().FileExists(*FileName))
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, TEXT("Could not Find File"));
+		return false;
+	}
+	else
+	{
+		// Convert filepath to character array and save to array
+		const TCHAR* FILEPATH = *FileName;
+		return FFileHelper::LoadFileToStringArray(TextArray, *FileName);
+		//return FFileHelper::LoadFileToString(SaveString, *FileName);
+	}
+}
+
 bool UTextFileManager::SaveArrayText(FString SaveDirectory, FString FileName, TArray<FString> SaveText, bool AllowOverwriting = false)
 {
 	// Set complete file path

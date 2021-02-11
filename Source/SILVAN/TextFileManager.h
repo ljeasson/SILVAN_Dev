@@ -13,7 +13,10 @@ UCLASS()
 class SILVAN_API UTextFileManager : public UBlueprintFunctionLibrary
 {
 	GENERATED_BODY()
-	
+
+		UFUNCTION(BlueprintCallable, Category = "Custom", meta = (Keywords = "Load"))
+		static bool LoadTextFromFile(FString FileName, TArray<FString>& TextArray, FString& TextString);
+		
 		UFUNCTION(BlueprintCallable, Category = "Custom", meta = (Keywords = "Save"))
 		static bool SaveArrayText(FString SaveDirectory, FString FileName, TArray<FString> SaveText, bool AllowOverwriting);
 };
