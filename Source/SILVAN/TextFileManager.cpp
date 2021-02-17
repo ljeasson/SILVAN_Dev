@@ -35,7 +35,8 @@ bool UTextFileManager::SaveArrayText(FString SaveDirectory, FString FileName, TA
 			return false;
 		}
 	}
-
+	
+	FPlatformFileManager::Get().GetPlatformFile().DeleteFile(*SaveDirectory);
 	FString FinalString = "";
 	for (FString& Each : SaveText)
 	{
@@ -44,5 +45,14 @@ bool UTextFileManager::SaveArrayText(FString SaveDirectory, FString FileName, TA
 	}
 
 	return FFileHelper::SaveStringToFile(FinalString, *SaveDirectory);
+	
+}
 
+bool UTextFileManager::DeleteTextFile(FString SaveDirectory, FString FileName)
+{
+	// Set complete file path
+	SaveDirectory += "\\";
+	SaveDirectory += FileName;
+
+	return FPlatformFileManager::Get().GetPlatformFile().DeleteFile(*SaveDirectory);
 }

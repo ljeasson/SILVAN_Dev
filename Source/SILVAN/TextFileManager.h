@@ -19,4 +19,7 @@ class SILVAN_API UTextFileManager : public UBlueprintFunctionLibrary
 		
 		UFUNCTION(BlueprintCallable, Category = "Custom", meta = (Keywords = "Save"))
 		static bool SaveArrayText(FString SaveDirectory, FString FileName, TArray<FString> SaveText, bool AllowOverwriting);
+
+		UFUNCTION(BlueprintCallable, Category = "Custom", meta = (Keywords = "Save"))
+		static bool DeleteTextFile(FString SaveDirectory, FString FileName);
 };
