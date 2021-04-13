@@ -1,5 +1,5 @@
-directory_ground = 'D:\PointClouds\Plot254\P254_2018_segmented_ground.txt';
-output_directory = 'D:\PointClouds\Plot254\';
+directory_ground = 'D:\PointClouds\USCAYF20180722f1a1_180722_181152_1_dem_filter_reproject\USCAYF20180722f1a1_180722_181152_1_dem_filter_reproject_segmented_ground.txt';
+output_directory = 'D:\PointClouds\USCAYF20180722f1a1_180722_181152_1_dem_filter_reproject\';
 name = 'segmented_ground_heightmap.png';
 
 limit = 2.5;     % Slope limit

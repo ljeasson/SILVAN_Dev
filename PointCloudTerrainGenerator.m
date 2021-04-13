@@ -1,4 +1,4 @@
-directory_ground = 'D:\PointClouds\Plot254\P254_2018_segmented_ground.txt';
+directory_ground = 'D:\PointClouds\USCAYF20180722f1a1_180722_181152_1_dem_filter_reproject\USCAYF20180722f1a1_180722_181152_1_dem_filter_reproject_segmented_ground.txt';
 a = importdata(directory_ground);
 close all;
 
